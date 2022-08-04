@@ -33,7 +33,6 @@ tab.pages[0].addInput(widthParams, 'width', {
     min: 1,
     max: 5,
 }).on('change', (ev) => {
-    console.log(ev.value.toFixed(2));
     boxMesh.geometry.dispose();
     globalWidth = ev.value;
     boxMesh.geometry = new THREE.BoxGeometry(
@@ -52,7 +51,6 @@ tab.pages[0].addInput(heightParams, 'height', {
     min: 1,
     max: 5,
 }).on('change', (ev) => {
-    console.log(ev.value.toFixed(2));
     boxMesh.geometry.dispose();
     globalHeight = ev.value;
     boxMesh.geometry = new THREE.BoxGeometry(
@@ -71,7 +69,6 @@ tab.pages[0].addInput(depthParams, 'depth', {
     min: 1,
     max: 5,
 }).on('change', (ev) => {
-    console.log(ev.value.toFixed(2));
     boxMesh.geometry.dispose();
     globalDepth = ev.value;
     boxMesh.geometry = new THREE.BoxGeometry(
